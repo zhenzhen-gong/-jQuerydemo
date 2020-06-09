@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #93b3c6;
+}
+.circle{
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin: 30px auto 40px;
+}
+nav{
+    width: 78.125vw;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    background-color: white;
+    color: #255d7e;
+    border: 2px solid #5395b4;
+    padding: 8px 10px;
+}

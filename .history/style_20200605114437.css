@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #93b3c6;
+}
+.circle{
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin: 30px auto 40px;
+}
+nav{
+    width: 78.125vw;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+nav:before{
+    /* display: block;  实现白条在下的代码，这里用z-index替换 */
+    content: "";
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+}
+nav a{
+    /* position: relative; 实现白条在下的代码，这里用z-index替换*/
+    text-decoration: none;
+    background-color: white;
+    color: #255d7e;
+    border: 2px solid #5395b4;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1;
+}
+.image{
+    width: 78.125vw;
+    height: 75vh;
+    margin: 0 auto;
+    overflow: hidden;/* 内容不得超出元素范围*/
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+
+}
+.image img{
+    width: 98%;
+    height: 96%;
+}
